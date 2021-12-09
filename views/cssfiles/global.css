@@ -1,0 +1,157 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(43, 43, 43);
+}
+
+.mainDivision {
+  width: 100%;
+  float: right;
+  display: block;
+  background-color: black;
+  overflow: hidden;
+}
+
+.SideBar {
+  width: 0%;
+  float: left;
+  height: 100%;
+  background-color: rgb(43, 43, 43);
+  display: none;
+  overflow: hidden;
+}
+
+/** Indented Divisions For Navigation Bar**/
+.NavBar {
+  height: 100px;
+  overflow: hiddden;
+  background-color: rgb(20, 19, 19);
+  width: 100%;
+}
+
+nav {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  align-items: center;
+}
+
+nav ul li {
+  float: right;
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li a {
+  margin: 10px;
+  font-size: large;
+  text-decoration: none;
+  color: rgba(127, 255, 212, 0.342);
+  text-align: center;
+  line-height: 2em;
+  margin: 8px;
+  margin-right: 20px;
+  width: 80px;
+  display: block;
+}
+
+nav ul li a:hover {
+  transform: scale(120%);
+  color: aquamarine;
+  transition: color 1.5s;
+}
+
+.SignIn {
+  color: Red;
+}
+
+.SignIn:hover {
+  color: rgb(121, 255, 121);
+  background-color: black;
+  transition: color 2s, background-color 2s;
+}
+
+navleft {
+  margin: 0px;
+  padding: 0px;
+}
+
+navleft ul {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  align-items: center;
+}
+
+navleft ul li {
+  float: left;
+  text-align: center;
+  list-style: none;
+}
+
+navleft ul li a {
+  margin: 10px;
+  font-size: large;
+  text-decoration: none;
+  color: rgba(127, 255, 212, 0.342);
+  text-align: center;
+  line-height: 2em;
+  margin: 8px;
+  margin-left: 30px;
+  width: 80px;
+  display: block;
+}
+
+navleft ul li a:hover {
+  transform: scale(120%);
+  color: aquamarine;
+  transition: color 1.5s;
+}
+/* Navigation Bar Ended */
+
+/* Side Bar */
+.closeBtn {
+  color: rgb(121, 255, 121);
+  margin-top: 20px;
+  margin-left: 120px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+side {
+  margin: 0px;
+  padding: 0px;
+}
+
+side ul {
+  margin-top: 150px;
+  padding: 0px;
+  text-align: center;
+}
+
+side ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+side ul li a {
+  font-size: large;
+  text-decoration: none;
+  color: rgba(170, 170, 170, 0.678);
+  line-height: 2em;
+  margin: 8px;
+  margin-right: 20px;
+  width: 130px;
+  display: block;
+}
+
+side ul li a:hover {
+  transform: scale(120%);
+  color: white;
+  transition: color 1.5s;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EachMoviePage</title>
+    <link rel="stylesheet" href="/cssfiles/global.css" />
+    <link rel="stylesheet" href="cssfiles/EachMovie.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- MAIN DIVISION -->
+    <div class="mainDivision" id="main_div_id">
+      <!-- NAVBAR DIVISION STARTED -->
+      <div class="NavBar" id="NavBar_id">
+        <nav>
+          <ul>
+            <li><a href="#log" class="SignIn">Login</a></li>
+            <li><a href="#TvShows">TV Shows</a></li>
+            <li><a href="movie.html">Movies</a></li>
+          </ul>
+        </nav>
+
+        <navleft>
+          <ul>
+            <li><a href="MainPage.html"> <img class="logo-img" src="Images/logo.png" width="80" height="80" ALT="align box" ALIGN=CENTER></li>
+            <li><a href="#EEE" onclick="SidebarOpen()" >MENU</a></li>
+          </ul>
+        </navleft>
+      </div>
+      <!-- NAVBAR ENDED -->
+
+      <!-- Top Division -->
+      <div class="TopHalf">
+        <!-- Movie Name and Details -->
+        <p style="color: white; font-size: 15px">
+          <span style="font-size: 40px"><b>RED NOTICE</b></span
+          ><br />Year 2019
+        </p>
+        <!-- TopRight Start -->
+        <div class="TopRight">
+          <h1 style="color: Aqua">About</h1>
+          <p style="color: aliceblue">
+            Red Notice is a 2021 American action comedy film written and
+            directed by Rawson Marshall Thurber. Red Notice's big budget and
+            A-list cast add up to a slickly competent action comedy make it an
+            entertaining movie.Originally planned for release by Universal
+            Pictures, the film was acquired by Netflix for distribution.
+          </p>
+
+          <div class="Review">
+            <h1
+              style="color: aqua; margin: 80px 80px 80px 80px; display: block"
+            >
+              RATING: 7.2&emsp;&emsp;&emsp; WishList
+            </h1>
+          </div>
+        </div>
+        <!-- TopRight End -->
+
+        <!-- TopLeft -->
+        <div class="TopLeft">
+          <img
+            alt="RedNotice"
+            src="Images/redNotice.jpeg"
+            height="380px"
+            width="675px"
+          />
+        </div>
+        <!-- TopLeft Ended -->
+      </div>
+      <!-- Top Division Ended -->
+
+      <!-- Footer1 Start -->
+      <div class="Footer">
+        <h1 style="color: aqua">MOVIE INFO:</h1>
+        <!-- Table for Movie Info Starts-->
+        <table class="MovieInfoTable">
+          <tr>
+            <td>Rating:</td>
+            <td>
+              PG-13 (Violence and Action|Strong Language|Some Sexual References)
+            </td>
+          </tr>
+          <tr>
+            <td>Genre:</td>
+            <td>Comedy</td>
+          </tr>
+          <tr>
+            <td>Language:</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>Cast:</td>
+            <td>Dwayne Jhonson, Ryan Reynolds, Gal Gadot</td>
+          </tr>
+          <tr>
+            <td>Release Date:</td>
+            <td>November 5, 2021</td>
+          </tr>
+          <tr>
+            <td>Runtime:</td>
+            <td>1hr 57min</td>
+          </tr>
+        </table>
+        <!--Table Ends-->
+      </div>
+      <!-- Footer1 END -->
+
+      <!-- Footer2 -->
+      <div class="Footer">
+        <h1 style="color: aqua">WHERE TO WATCH</h1>
+      </div>
+      <!-- Footer2 END -->
+
+      <!-- FOOTER LAST-->
+      <div class="Footer">
+        <h1 style="color: aqua">LAST PART</h1>
+      </div>
+      <!-- FOOTER LAST END-->
+
+      <!-- Last Footer Start -->
+      <div class="FooterEnd">
+        <lfl>
+          <ul>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <br />
+            <br />
+          </ul>
+        </lfl>
+
+        <lfl2>
+          <ul>
+            <li><a href="#">Box-OfficeMojo</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Advertizing</a></li>
+            <br />
+          </ul>
+        </lfl2>
+
+        <lfl3>
+          <ul>
+            <li>
+              <a href="#" style="font-size: large; line-height: 4em"
+                >an
+                <i class="fa fa-amazon" aria-hidden="true">mazon Company</i></a
+              >
+            </li>
+            <br />
+          </ul>
+        </lfl3>
+      </div>
+      <!-- Footer Ended-->
+    </div>
+    <!-- MAIN ENDED -->
+
+    <!-- Division Side Bar -->
+    <div class="SideBar" id="SideBar_id">
+      <side>
+        <ul class="closeBtn">
+          <a onclick="SideBarClose()" href="#x" style="text-decoration: none; color: aqua;"> X </a>
+        </ul>
+        <ul>
+          <li><a href="movieList.html">MoviesList</a></li>
+          <li><a href="tvShowsList.html">TvShowsList</a></li>
+          <li><a href="#Awards">Events</a></li>
+          <li><a href="#BoxOffice">Box Office</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </side>
+    </div>
+    <!-- Division Side Bar Ended -->
+
+    <!-- SCRIPT -->
+    <script>
+      function SidebarOpen() {
+        let x = document.getElementById("SideBar_id");
+        let y = document.getElementById("main_div_id");
+        x.style.width = "13%";
+        x.style.display = "block";
+        y.style.width = "87%";
+        y.style.transition = "width 2s";
+      }
+
+      function SideBarClose() {
+        let x = document.getElementById("SideBar_id");
+        let y = document.getElementById("main_div_id");
+        x.style.width = "0%";
+        x.style.display = "none";
+        y.style.width = "100%";
+      }
+    </script>
+  </body>
+</html>

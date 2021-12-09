@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieList</title>
+    <link rel="stylesheet" href="/cssfiles/global.css" />
+    <link rel="stylesheet" href="cssfiles/List.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- MAIN DIVISION -->
+    <div class="mainDivision" id="main_div_id">
+      <!-- NAVBAR DIVISION STARTED -->
+      <div class="NavBar" id="NavBar_id">
+        <nav>
+          <ul>
+            <li><a href="#log" class="SignIn">Login</a></li>
+            <li><a href="#TvShows">TV Shows</a></li>
+            <li><a href="movie.html">Movies</a></li>
+          </ul>
+        </nav>
+
+        <navleft>
+          <ul>
+            <li><a href="MainPage.html"> <img class="logo-img" src="Images/logo.png" width="80" height="80" ALT="align box" ALIGN=CENTER></li>
+            <li><a href="#EEE" onclick="SidebarOpen()" >MENU</a></li>
+          </ul>
+        </navleft>
+      </div>
+      <!-- NAVBAR ENDED -->
+
+      <!-- HeaderPage3 -->
+      <div class="HeaderPage3">
+        <h2
+          style="
+            color: black;
+            margin-left: 10px;
+            font-size: 20px;
+            text-decoration: underline;
+          "
+        >
+          Movie Charts
+        </h2>
+        <h1 style="color: black; margin-left: 10px; font-size: 40px">
+          Popular Movies
+        </h1>
+        <hr style="background-color: whitesmoke; height: 5px" />
+        <p style="margin-left: 20px">Showing 10 titles</p>
+        <table class="MovieList">
+          <tr>
+            <th></th>
+            <th>Movies</th>
+            <th>Rating</th>
+            <th>Watched</th>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/After.jfif" height="120px" /></td>
+            <td>After</td>
+            <td>7.2</td>
+            <td>32,548</td>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/Assasin.jfif" height="120px" /></td>
+            <td>Assasin</td>
+            <td>8</td>
+            <td>82,551</td>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/BabyDriver.jfif" height="120px" /></td>
+            <td>BabyDriver</td>
+            <td>6.2</td>
+            <td>121,032</td>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/BeautyBeast.jpg" height="120px" /></td>
+            <td>Beauty And Beast</td>
+            <td>6</td>
+            <td>182,164</td>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/BlackMirror.jpg" height="120px" /></td>
+            <td>BlackMirror</td>
+            <td>7.4</td>
+            <td>242,874</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="Images/Movies/HitmanBodygaurd.jfif" height="120px" />
+            </td>
+            <td>Hitman's Bodygaurd</td>
+            <td>5.8</td>
+            <td>643,878</td>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/Joker.jfif" height="120px" /></td>
+            <td>Joker</td>
+            <td>9.2</td>
+            <td>2,912,345</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="Images/Movies/SpidermanFarFromHome.jfif"
+                height="120px"
+              />
+            </td>
+            <td>Spiderman: Far From Home</td>
+            <td>8.4</td>
+            <td>4,125,890</td>
+          </tr>
+          <tr>
+            <td><img src="Images/Movies/xmen.jpg" height="120px" /></td>
+            <td>X-men</td>
+            <td>6.9</td>
+            <td>3,732,974</td>
+          </tr>
+          <tr>
+            <td><img src="Images/TvShows/Annette.jfif" height="120px" /></td>
+            <td>Annette</td>
+            <td>7.5</td>
+            <td>89,784</td>
+          </tr>
+        </table>
+
+        <p style="margin-left: 20px">
+          <a
+            href="https://www.boxofficemojo.com/date/2021-12-05/weekly/"
+            target="_blank"
+            >See More Results on BoxOfficeMojo
+          </a>
+        </p>
+      </div>
+      <!-- HeaderPage3 Ended -->
+
+      <!-- Footer Start -->
+      <div class="FooterEnd">
+        <lfl>
+          <ul>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <br />
+            <br />
+          </ul>
+        </lfl>
+
+        <lfl2>
+          <ul>
+            <li><a href="#">Box-OfficeMojo</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Advertizing</a></li>
+            <br />
+          </ul>
+        </lfl2>
+
+        <lfl3>
+          <ul>
+            <li>
+              <a href="#" style="font-size: large; line-height: 4em"
+                >an
+                <i class="fa fa-amazon" aria-hidden="true">mazon Company</i></a
+              >
+            </li>
+            <br />
+          </ul>
+        </lfl3>
+      </div>
+      <!-- Footer Ended-->
+    </div>
+    <!-- MAIN ENDED -->
+
+    <!-- Division Side Bar -->
+    <div class="SideBar" id="SideBar_id">
+      <side>
+        <ul class="closeBtn">
+          <a onclick="SideBarClose()" href="#x" style="text-decoration: none; color: aqua;"> X </a>
+        </ul>
+        <ul>
+          <li><a href="movieList.html">MoviesList</a></li>
+          <li><a href="tvShowsList.html">TvShowsList</a></li>
+          <li><a href="#Awards">Events</a></li>
+          <li><a href="#BoxOffice">Box Office</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </side>
+    </div>
+    <!-- Division Side Bar Ended -->
+
+    <!-- SCRIPT -->
+    <script>
+      function SidebarOpen() {
+        let x = document.getElementById("SideBar_id");
+        let y = document.getElementById("main_div_id");
+        x.style.width = "13%";
+        x.style.display = "block";
+        y.style.width = "87%";
+        y.style.transition = "width 2s";
+      }
+
+      function SideBarClose() {
+        let x = document.getElementById("SideBar_id");
+        let y = document.getElementById("main_div_id");
+        x.style.width = "0%";
+        x.style.display = "none";
+        y.style.width = "100%";
+      }
+    </script>
+  </body>
+</html>

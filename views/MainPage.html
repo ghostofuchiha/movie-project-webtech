@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieCritique</title>
+    <link rel="stylesheet" href="./cssfiles/global.css" />
+    <link rel="stylesheet" href="./cssfiles/MainPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- MAIN DIVISION -->
+    <div class="mainDivision" id="main_div_id">
+      <!-- NAVBAR DIVISION STARTED -->
+      <div class="NavBar" id="NavBar_id">
+        <nav>
+          <ul>
+            <li><a href="/login" class="SignIn">Login</a></li>
+            <li><a href="#TvShows">TV Shows</a></li>
+            <li><a href="movie.html">Movies</a></li>
+          </ul>
+        </nav>
+
+        <navleft>
+          <ul>
+            <li><a href="MainPage.html"> <img class="logo-img" src="Images/logo.png" width="80" height="80" ALT="align box" ALIGN=CENTER></li>
+            <li><a href="#EEE" onclick="SidebarOpen()" >MENU</a></li>
+          </ul>
+        </navleft>
+      </div>
+      <!-- NAVBAR ENDED -->
+
+      <!-- Middle Division-->
+      <div class="MiddleDivision">
+        <!-- SlideShow Container -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img
+              src="Images/redNotice.jpeg"
+              style="width: 600px; height: 300px"
+              href="#Highway"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img
+              src="Images/Movies/BabyDriver.jfif"
+              style="width: 600px; height: 300px"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img
+              src="Images/Movies/Joker.jfif"
+              style="width: 600px; height: 300px"
+            />
+          </div>
+          <br />
+          <!-- Slide Show Container END -->
+
+          <!-- Three Dots Below -->
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <!--Three Dot Division End -->
+        </div>
+        <!--Slide Show Container END-->
+
+        <!-- Right Part-->
+        <div class="UpNext"></div>
+        <!-- Right Part Ended -->
+      </div>
+      <!-- MIDDLE DIVISION ENDED -->
+
+      <!-- Footer Part Started -->
+      <!-- Footer 1 -->
+      <div class="Footer1">
+        <h2 style="color: rebeccapurple">Featured Today</h2>
+      </div>
+      <!-- Footer 1 ENDED -->
+
+      <!-- Footer 2 Stated -->
+      <div class="Footer2">
+        <h2 style="color: rosybrown">TOP PICKS</h2>
+      </div>
+      <!-- Footer 2 Ended -->
+
+      <!-- Footer 3 Stated -->
+      <div class="Footer3">
+        <h2 style="color: blue">TOP OF BOX-OFFICE</h2>
+      </div>
+      <!-- Footer 3 Ended -->
+
+      <!-- Footer 4 Stated -->
+      <div class="Footer4">
+        <h2 style="color: green">On Theaters</h2>
+      </div>
+      <!-- Footer 4 Ended -->
+
+      <!-- Footer 5 Stated -->
+      <div class="Footer5">
+        <h2 style="color: green">TV SHOWS</h2>
+      </div>
+      <!-- Footer 5 Ended -->
+
+      <!-- Last Footer Start -->
+      <div class="FooterEnd">
+        <lfl>
+          <ul>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <br />
+            <br />
+          </ul>
+        </lfl>
+
+        <lfl2>
+          <ul>
+            <li><a href="https://BoxOfficeMojo.com" target="_blank">Box-OfficeMojo</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Advertizing</a></li>
+            <br />
+          </ul>
+        </lfl2>
+
+        <lfl3>
+          <ul>
+            <li>
+              <a href="#" style="font-size: large; line-height: 4em"
+                >an
+                <i class="fa fa-amazon" aria-hidden="true">mazon Company</i></a
+              >
+            </li>
+            <br />
+          </ul>
+        </lfl3>
+      </div>
+      <!-- Footer Ended-->
+    </div>
+    <!-- MAIN ENDED -->
+
+    <!-- Division Side Bar -->
+    <div class="SideBar" id="SideBar_id">
+      <side>
+        <ul class="closeBtn">
+          <a onclick="SideBarClose()" href="#x" style="text-decoration: none; color: aqua;"> X </a>
+        </ul>
+        <ul>
+          <li><a href="movieList.html">MoviesList</a></li>
+          <li><a href="tvShowsList.html">TvShowsList</a></li>
+          <li><a href="#Awards">Events</a></li>
+          <li><a href="#BoxOffice">Box Office</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </side>
+    </div>
+    <!-- Division Side Bar Ended -->
+
+    <!-- SCRIPT -->
+    <script src="jsfiles/page4.js"></script>
+    <script>
+      function SidebarOpen() {
+        let x = document.getElementById("SideBar_id");
+        let y = document.getElementById("main_div_id");
+        x.style.width = "13%";
+        x.style.display = "block";
+        y.style.width = "87%";
+        y.style.transition = "width 2s";
+      }
+
+      function SideBarClose() {
+        let x = document.getElementById("SideBar_id");
+        let y = document.getElementById("main_div_id");
+        x.style.width = "0%";
+        x.style.display = "none";
+        y.style.width = "100%";
+      }
+    </script>
+  </body>
+</html>

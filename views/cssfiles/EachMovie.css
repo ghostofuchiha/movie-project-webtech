@@ -1,0 +1,114 @@
+.TopHalf {
+  height: 500px;
+  width: 100%;
+  margin: 15px;
+  overflow: hidden;
+  align-content: center;
+}
+
+.TopRight {
+  height: 380px;
+  float: right;
+  width: 50%;
+  margin: 20px;
+}
+
+.TopLeft {
+  height: 380px;
+  float: left;
+  width: 45%;
+  align-content: center;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(44, 41, 41, 0.897),
+    0px 6px 20px 0 rgba(51, 50, 50, 0.87);
+  border-radius: 20px;
+}
+
+.Footer {
+  height: 270px;
+  margin-left: 40px;
+}
+
+.MovieInfoTable {
+  font-size: large;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.Review {
+  height: 150px;
+  margin: 20px 80px 0px 40px;
+}
+
+/* FOOTER End*/
+.FooterEnd {
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* Last Few Lines*/
+lfl {
+  text-align: center;
+}
+
+lfl ul li {
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+lfl > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+  padding-top: 3px;
+}
+
+lfl ul li a:hover {
+  background-color: rgb(32, 29, 29);
+  border-radius: 25px;
+}
+
+/* Line 2 Last*/
+lfl2 {
+  text-align: center;
+}
+
+lfl2 ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 120px;
+}
+
+lfl2 > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+}
+
+/* Line 3 Last*/
+lfl3 {
+  text-align: center;
+}
+
+lfl3 ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 240px;
+}
+
+lfl3 > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+}

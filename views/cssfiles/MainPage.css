@@ -1,0 +1,233 @@
+/*Added Extras*/
+/* Middle Division */
+.MiddleDivision {
+  overflow: hidden;
+  margin-left: 400px;
+  margin-right: 600px;
+  align-content: center;
+}
+
+/* FOOTER PART 1*/
+.Footer1 {
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER PART 2*/
+.Footer2 {
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER PART 3*/
+.Footer3 {
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+}
+
+/* FOOTER PART 4*/
+.Footer4 {
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER PART 4*/
+.Footer5 {
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* New Set Instructions */
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(66, 168, 122, 0.685),
+    0 6px 20px 0 rgba(255, 250, 250, 0.19);
+}
+
+/* Slideshow container: Left side*/
+.slideshow-container {
+  max-width: 800px;
+  position: absolute;
+  margin-top: 50px;
+  float: left;
+  width: 60%;
+  height: 400px;
+  padding-left: 50px;
+  align-content: center;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0px;
+  width: 0px;
+  margin: 0px 50px;
+  position: relative;
+  background-color: rgb(134, 139, 139);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: cyan;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Right Side Division */
+.UpNext {
+  float: right;
+  width: 40%;
+  margin-top: 50px;
+  height: 400px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* FOOTER End*/
+.FooterEnd {
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* Last Few Lines*/
+lfl {
+  text-align: center;
+}
+
+lfl ul li {
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+lfl > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+  padding-top: 3px;
+}
+
+lfl ul li a:hover {
+  background-color: rgb(32, 29, 29);
+  border-radius: 25px;
+}
+
+/* Line 2 Last*/
+lfl2 {
+  text-align: center;
+}
+
+lfl2 ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 120px;
+}
+
+lfl2 > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+}
+
+/* Line 3 Last*/
+lfl3 {
+  text-align: center;
+}
+
+lfl3 ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 240px;
+}
+
+lfl3 > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+}

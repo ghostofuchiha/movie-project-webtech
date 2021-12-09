@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>movie page</title>
+    <link rel="stylesheet" href="/cssfiles/global.css">
+    <link rel="stylesheet" href="/cssfiles/movie.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- MAIN DIVISION -->
+    <div class="mainDivision" id="main_div_id">
+      <!-- NAVBAR DIVISION STARTED -->
+      <div class="NavBar" id="NavBar_id">
+        <nav>
+          <ul>
+            <li><a href="#log" class="SignIn">Login</a></li>
+            <li><a href="#TvShows">TV Shows</a></li>
+            <li><a href="movie.html">Movies</a></li>
+          </ul>
+        </nav>
+  
+        <navleft>
+          <ul>
+            <li><a href="MainPage.html"> <img class="logo-img" src="Images/logo.png" width="80" height="80" ALT="align box" ALIGN=CENTER></li>
+            <li><a href="#EEE" onclick="SidebarOpen()" >MENU</a></li>
+          </ul>
+        </navleft>
+      </div>
+      <!-- NAVBAR ENDED -->
+      <div class="topBar">
+        <h1 style="color:khaki; margin: 50px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MOVIES</h1>
+        <h2 style="color:khaki; margin: 50px; text-align: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 1000;">Top Rated Movies of 2021</h2>
+      </div>
+
+      <!-- React Components Imported -->
+      <div id="topmov"></div>
+
+      <!-- Last Footer Start -->
+      <div class="FooterEnd">
+        <lfl>
+          <ul>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#Movie"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <br />
+            <br />
+          </ul>
+        </lfl>
+
+        <lfl2>
+          <ul>
+            <li><a href="#">Box-OfficeMojo</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Advertizing</a></li>
+            <br />
+          </ul>
+        </lfl2>
+
+        <lfl3>
+          <ul>
+            <li>
+              <a href="#" style="font-size: large; line-height: 4em"
+                >an
+                <i class="fa fa-amazon" aria-hidden="true">mazon Company</i></a
+              >
+            </li>
+            <br />
+          </ul>
+        </lfl3>
+      </div>
+      <!-- Footer Ended-->
+
+    </div>
+    <!-- MAIN ENDED -->
+
+    <!-- Division Side Bar -->
+    <div class="SideBar" id="SideBar_id">
+      <side>
+        <ul class="closeBtn">
+          <a onclick="SideBarClose()" href="#x" style="text-decoration: none; color: aqua;"> X </a>
+        </ul>
+        <ul>
+          <li><a href="movieList.html">MoviesList</a></li>
+          <li><a href="tvShowsList.html">TvShowsList</a></li>
+          <li><a href="#Awards">Events</a></li>
+          <li><a href="#BoxOffice">Box Office</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </side>
+    </div>
+    <!-- Division Side Bar Ended -->
+  
+    <!-- SCRIPT -->
+    <!-- React Components -->
+    <script type="text/babel">
+      
+      // import React, {Component} from 'react';
+      // import ReactDOM from 'react-dom';
+      // import './home.css';
+      class Poster extends React.Component{
+        render(){
+          return(
+            <img src={this.props.src} width={this.props.width} height={this.props.height}/>         
+            );
+        }
+
+      }
+      class Caption extends React.Component{
+        render(){
+          return(
+            <p style={{textAlign: 'center'}}>{this.props.children}</p>
+          );
+        }
+      }
+      class Trailer extends React.Component{
+        render(){
+          const mystyle = {
+          color: "white",
+          padding: "10px",
+          fontFamily: "Arial",
+          textDecoration: "none",
+          textAlign: 'center'
+          }; 
+          return(
+            <a href={this.props.href} style={mystyle}>Watch trailer Now</a>
+          );
+        }
+      }
+      class Call extends React.Component{
+        render(){
+          return(
+            <div class="MovieBar">
+            <Poster src={this.props.src} width={this.props.width} height={this.props.height} transition/>
+            <Caption>{this.props.children}</Caption>
+            <Trailer href={this.props.href}></Trailer>
+            </div>                          
+          );
+        }
+      }
+      ReactDOM.render(
+          <div>
+          <Call src="Images/1.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">ANNATTE</Call>
+          <Call src="Images/2.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">GREEN knight</Call>
+          <Call src="Images/3.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">THE RED NOTICE</Call>
+          <Call src="Images/4.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">TENET</Call>
+          <Call src="Images/5.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">THE HARDER THEY FALL</Call>
+          <Call src="Images/6.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">PRISISONS OF THE GHOSTLAND</Call>
+          <Call src="Images/7.jpeg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">THE HAND OF GOD</Call>
+          <Call src="Images/8.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">KATE</Call>
+          <Call src="Images/1.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">ANNATTE</Call>
+          <Call src="Images/2.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">GREEN knight</Call>
+          <Call src="Images/3.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">THE RED NOTICE</Call>
+          <Call src="Images/4.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">TENET</Call>
+          <Call src="Images/5.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">THE HARDER THEY FALL</Call>
+          <Call src="Images/6.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">PRISISONS OF THE GHOSTLAND</Call>
+          <Call src="Images/7.jpeg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">THE HAND OF GOD</Call>
+          <Call src="Images/8.jpg" width='250px' height='400px' href="https://www.youtube.com/user/movieclipstrailers">KATE</Call>
+          </div>
+          ,
+          document.getElementById('topmov')
+
+        );
+
+      function SidebarOpen() {
+        let x = document.getElementById('SideBar_id');
+        let y = document.getElementById('main_div_id');
+        x.style.width = "13%";
+        x.style.display = "block";
+        y.style.width = "87%";
+        y.style.transition = "width 2s";
+      }
+  
+      function SideBarClose() {
+        let x = document.getElementById('SideBar_id');
+        let y = document.getElementById('main_div_id');
+        x.style.width = "0%";
+        x.style.display = "none";
+        y.style.width = "100%";
+      }
+    </script>
+  </body>
+  
+</html>

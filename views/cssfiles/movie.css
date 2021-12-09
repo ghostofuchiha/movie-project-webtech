@@ -1,0 +1,94 @@
+.topBar {
+  text-align: center;
+  box-sizing: border-box;
+}
+#topmov {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: aquamarine;
+  margin: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.MovieBar {
+  width: 20%;
+  margin: 4px;
+  border: 3px solid black;
+  padding: 2%;
+  float: left;
+  background-color: rgb(68, 67, 67);
+  overflow: hidden;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+/* FOOTER End*/
+.FooterEnd {
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* Last Few Lines*/
+lfl {
+  text-align: center;
+}
+
+lfl ul li {
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+lfl > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+  padding-top: 3px;
+}
+
+lfl ul li a:hover {
+  background-color: rgb(32, 29, 29);
+  border-radius: 25px;
+}
+
+/* Line 2 Last*/
+lfl2 {
+  text-align: center;
+}
+
+lfl2 ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 120px;
+}
+
+lfl2 > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+}
+
+/* Line 3 Last*/
+lfl3 {
+  text-align: center;
+}
+
+lfl3 ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 240px;
+}
+
+lfl3 > ul > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-style: serif;
+}

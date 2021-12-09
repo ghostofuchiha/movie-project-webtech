@@ -1,0 +1,254 @@
+body{
+  background-color:white;
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0px;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+}
+
+/* Main Division*/
+.bg-div
+{
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  overflow: hidden;
+}
+
+/* Middle Division */
+.MiddleDivision
+{
+  align-self: auto;
+  overflow: hidden;
+  margin-left: 70px;
+}
+
+/* FOOTER PART 1*/
+.Footer1
+{
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER PART 2*/
+.Footer2
+{
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER PART 3*/
+.Footer3
+{
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+}
+
+/* FOOTER PART 4*/
+.Footer4
+{
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER PART 4*/
+.Footer5
+{
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 cyan;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* FOOTER End*/
+.FooterEnd
+{
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 red;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 25px;
+  height: 250px;
+  width: 95%;
+}
+
+/* Navigation Bar*/
+nav
+{
+  float: right;
+  overflow: hidden;
+  margin: 0px;
+  text-align: center;
+}
+
+nav ul
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li
+{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav > ul > li > a
+{
+  color:rgb(255, 255, 255);
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-style: serif;
+  line-height: 2em;
+}
+
+nav ul li a:hover
+{
+  background-color: rgba(26, 26, 26, 0.3);
+  border-radius: 3px;
+  box-shadow: cyan 10px;
+  text-decoration: line-through rgb(76, 78, 78) 2px;
+  color: cyan;
+}
+
+.Searchlbl
+{
+  display: block 600px;
+  width: 400px;
+  border-radius: 2px;
+  box-shadow: white 10px;
+  height: 30px;
+  border-style: none;
+  float: left;
+}
+
+.logo-img
+{
+  float: left;
+  position: relative;
+  margin: 10px 15px 15px 10px;
+}
+
+.SignInbtn
+{
+  color: red;
+  width: 100px;
+  font-style: italic;
+}
+
+.SignInbtn:hover
+{
+  color: red;
+}
+
+/* New Set Instructions */
+.mySlides
+{
+  display: none;
+}
+
+img
+{
+  vertical-align: middle;
+}
+
+/* Slideshow container: Left side*/
+.slideshow-container {
+  max-width: 800px;
+  position: absolute;
+  margin-top: 50px;
+  float: left;
+  width:50%;
+  height: 400px;
+  background-color: tomato;
+  padding-left: 50px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 2px;
+  width: 50px;
+  margin: 0px 5px;
+  background-color: rgb(0, 221, 255);
+  border-radius: 2%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ffffff56;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Right Side Division */
+.UpNext
+{
+  float:right;
+  width:40%;
+  background-color: turquoise;
+  margin-top: 50px;
+  height: 400px;
+}
+
